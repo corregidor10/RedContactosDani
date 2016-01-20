@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace RedSocialDani.View
 {
-    public partial class Page1 : ContentPage
+    public partial class Login : ContentPage
     {
-        public Page1()
+        public Login()
         {
             InitializeComponent();
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using RedSocialDani.Modulo;
 using Xamarin.Forms;
 
 namespace RedSocialDani
@@ -11,20 +11,9 @@ namespace RedSocialDani
     {
         public App()
         {
-            // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            var start = new Startup(this);
+            start.Run();
+
         }
 
         protected override void OnStart()
