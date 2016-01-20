@@ -45,12 +45,18 @@
     <Compile Include="Model\Contacto.cs" />
     <Compile Include="Model\Mensaje.cs" />
     <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Modulo\AutofacBootstrapper.cs" />
+    <Compile Include="Modulo\AutofacModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\IServicioDatos.cs" />
     <Compile Include="Service\ServicioDatosImpl.cs" />
     <Compile Include="Utils\Cadenas.cs" />
     <Compile Include="ViewModel\Base\IViewModel.cs" />
     <Compile Include="ViewModel\Base\ViewModelBase.cs" />
+    <Compile Include="ViewModel\GeneralViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\PrincipalViewModel.cs" />
+    <Compile Include="ViewModel\RegistroViewModel.cs" />
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -99,9 +105,7 @@
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modulo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="View\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
