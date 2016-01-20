@@ -8,7 +8,7 @@ namespace RedSocialDani.Model
 {
    public  class Contacto
     {
-        public int idUsuario { get; set; }
-        public int idAmigo { get; set; }
+        public int IdUsuario { get; set; }
+        public int IdAmigo { get; set; }
     }
 }

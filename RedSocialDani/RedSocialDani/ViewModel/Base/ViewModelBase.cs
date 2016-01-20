@@ -14,7 +14,6 @@ namespace RedSocialDani.ViewModel.Base
         private double _opacity;
         private bool _enabled;
 
-
         public event PropertyChangedEventHandler PropertyChanged;
         public string Titulo { get; set; }
 
@@ -37,7 +36,6 @@ namespace RedSocialDani.ViewModel.Base
             Opacity = 1;
             Enabled = true;
         }
-
         public double Opacity
         {
             get { return _opacity; }
@@ -51,7 +49,7 @@ namespace RedSocialDani.ViewModel.Base
         }
 
         protected virtual bool SetProperty<T>(ref T variable,
-           T valor, [CallerMemberName] string nombre = null)
+            T valor, [CallerMemberName] string nombre = null)
         {
             if (object.Equals(variable, valor))
                 return false;
@@ -69,7 +67,6 @@ namespace RedSocialDani.ViewModel.Base
                 handler(this, new PropertyChangedEventArgs(nombre));
             }
         }
-
         public void SetState<T>(Action<T> action) where T : class, IViewModel
         {
             if (action != null)

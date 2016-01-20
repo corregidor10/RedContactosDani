@@ -8,14 +8,14 @@ namespace RedSocialDani.Model
 {
    public class Mensaje
     {
-        public int idUsuario { get; set; }
-        public int idOrigen { get; set; }
-        public int idDestino { get; set; }
+        public int IdUsuario { get; set; }
+        public int IdOrigen { get; set; }
+        public int IdDestino { get; set; }
 
-        public String asunto { get; set; }
-        public String contenido { get; set; }
-        public bool leido { get; set; }
-        public DateTime fecha { get; set; }
+        public String Asunto { get; set; }
+        public String Contenido { get; set; }
+        public bool Leido { get; set; }
+        public DateTime Fecha { get; set; }
 
     }
 }

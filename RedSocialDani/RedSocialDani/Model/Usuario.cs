@@ -8,12 +8,12 @@ namespace RedSocialDani.Model
 {
   public class Usuario
     {
-        public int IdUsuario { get; set; }
-        public String login { get; set; }
-        public String password { get; set; }
+        public String IdUsuario { get; set; }
+        public String Login { get; set; }
+        public String Password { get; set; }
 
-        public String nombre { get; set; }
-        public String apellidos { get; set; }
-        public String foto { get; set; }
+        public String Nombre { get; set; }
+        public String Apellidos { get; set; }
+        public String Foto { get; set; }
     }
 }

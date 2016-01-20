@@ -17,7 +17,7 @@ namespace RedSocialDani.ViewModel
             cmdAlta = new Command(NuevoUsuario);
         }
 
-        public string TituloIniciar { get { return "Inicar sesión"; } }
+        public string TituloIniciar { get { return "Iniciar sesión"; } }
         public string TituloRegistro { get { return "Nuevo usuario"; } }
         public string TituloLogin { get { return "Nombre de usuario"; } }
         public string TituloPassword { get { return "Contraseña"; } }

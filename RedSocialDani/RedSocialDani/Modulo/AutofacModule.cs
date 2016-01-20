@@ -15,8 +15,7 @@ namespace RedSocialDani.Modulo
             builder.RegisterType<Navigator>().
                 As<INavigator>().SingleInstance();
 
-            builder.Register<INavigation>(
-                ctx => App.Current.MainPage.Navigation).SingleInstance();
+            builder.Register<INavigation>(ctx => App.Current.MainPage.Navigation).SingleInstance();
 
 
         }

@@ -27,7 +27,7 @@ namespace RedSocialDani.Service
             try
             {
                 var data = await tabla.CreateQuery().
-                    Where(o => o.login == us.login && o.password == us.password).
+                    Where(o => o.Login == us.Login && o.Password == us.Password).
                     ToListAsync();
 
                 if (data.Count == 0)
@@ -47,23 +47,23 @@ namespace RedSocialDani.Service
 
             try
             {
-                var data = await tabla.CreateQuery().Where(o => o.login == us.login)
+                var data = await tabla.CreateQuery().Where(o => o.Login == us.Login)
                     .ToListAsync();
                 if (data.Count > 0)
                     return null;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new Exception("Usuario ya registrado");
+
             }
 
             try
             {
                 await tabla.InsertAsync(us);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new Exception("Error en la creacion del usuario");
+                return null;
             }
             return us;
         }
